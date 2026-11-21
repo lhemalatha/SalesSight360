@@ -1,4 +1,12 @@
-# SalesSight 360
+## 🚀 Live Dashboard
+
+
+Explore the interactive SalesSight360 dashboard: https://salessight360-dashboard.streamlit.app/
+
+
+## Project Repository
+
+This repository contains the project source code, datasets, Power BI dashboard, and Streamlit application.# SalesSight 360
 ## Multi-Channel Revenue Analytics Platform
 
 Domain: Data Analytics
