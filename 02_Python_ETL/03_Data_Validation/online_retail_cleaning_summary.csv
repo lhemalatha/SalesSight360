@@ -1,0 +1,3 @@
+﻿source_sheet,original_rows,cleaned_rows,exact_duplicate_rows_retained,missing_customer_ids,negative_quantity_rows,cancellation_invoice_rows,invalid_invoice_dates,zero_or_negative_price_rows,status
+Year 2009-2010,525461,525461,6865,107927,12326,10206,0,3690,SUCCESS
+Year 2010-2011,541910,541910,5268,135080,10624,9288,0,2517,SUCCESS

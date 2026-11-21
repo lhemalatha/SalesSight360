@@ -1,0 +1,15 @@
+﻿dataset,kpi_name,calculated_value,unit,validation_status,validation_note
+Olist E-commerce,Total Delivered Revenue,15419773.75,BRL,PASS,Delivered orders with item records; includes freight.
+Olist E-commerce,Total Delivered Orders,96478.0,Count,PASS,Distinct delivered orders.
+Olist E-commerce,Average Order Value,159.83,BRL,PASS,Average based on delivered orders with item records.
+Olist E-commerce,Cancellation Rate,0.63,Percentage,PASS,625 canceled / 99441 total orders.
+Olist E-commerce,Unavailable Order Rate,0.61,Percentage,PASS,609 unavailable / 99441 total orders.
+Olist E-commerce,Payment Reconciliation Rate,99.42,Percentage,REVIEW,Exact matches only: 98089; rounding tolerance: 273; mismatches: 303.
+Olist E-commerce,Payment Mismatch Count,303.0,Count,PASS,Orders classified as AMOUNT_MISMATCH.
+Marketing Funnel,Total Marketing Qualified Leads,8000.0,Count,PASS,Distinct MQL IDs in the leads dataset.
+Marketing Funnel,Total Closed Deals,842.0,Count,PASS,Distinct MQL IDs in the closed deals dataset.
+Marketing Funnel,MQL-to-Closed-Deal Conversion Rate,10.53,Percentage,REVIEW,Dataset-level ratio; not a complete CRM stage conversion rate.
+Online Retail II,Net Transaction Value,19287250.57,GBP,PASS,Includes negative quantities and cancellation invoice rows.
+Online Retail II,Invoice Count,53628.0,Count,PASS,"Distinct invoice IDs, including cancellation invoices."
+Online Retail II,Return Indicator Count,22950.0,Count,PASS,Rows with negative quantity; not confirmed refunds.
+Online Retail II,Cancellation Invoice Count,8292.0,Count,PASS,Distinct invoice IDs beginning with C.

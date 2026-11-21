@@ -1,0 +1,34 @@
+check,result,details
+Customers: duplicate customer_id,0,Expected zero only if this column is a unique key.
+Orders: duplicate order_id,0,Expected zero only if this column is a unique key.
+Products: duplicate product_id,0,Expected zero only if this column is a unique key.
+Sellers: duplicate seller_id,0,Expected zero only if this column is a unique key.
+Marketing leads: duplicate mql_id,0,Expected zero only if this column is a unique key.
+Orders -> Customers,0,"Non-null child values without a matching parent. Checked 99,441 child rows."
+Order items -> Orders,0,"Non-null child values without a matching parent. Checked 112,650 child rows."
+Order items -> Products,0,"Non-null child values without a matching parent. Checked 112,650 child rows."
+Order items -> Sellers,0,"Non-null child values without a matching parent. Checked 112,650 child rows."
+Payments -> Orders,0,"Non-null child values without a matching parent. Checked 103,886 child rows."
+Reviews -> Orders,0,"Non-null child values without a matching parent. Checked 99,224 child rows."
+Closed deals -> Marketing leads,0,Non-null child values without a matching parent. Checked 842 child rows.
+Closed deals -> Sellers,462,Non-null child values without a matching parent. Checked 842 child rows.
+Order status: delivered,96478,Number of orders in this status.
+Order status: shipped,1107,Number of orders in this status.
+Order status: canceled,625,Number of orders in this status.
+Order status: unavailable,609,Number of orders in this status.
+Order status: invoiced,314,Number of orders in this status.
+Order status: processing,301,Number of orders in this status.
+Order status: created,5,Number of orders in this status.
+Order status: approved,2,Number of orders in this status.
+Order purchase date range,2016-09-04 21:15:19 to 2018-10-17 17:30:18,Invalid or missing dates: 0
+Orders with both item and payment records,98665,Orders present in both aggregated item and payment data.
+Orders with unmatched item/payment records,776,Investigate before deciding whether records should be excluded.
+Orders with non-zero payment difference,303,Payment total compared with item value plus freight. Differences need investigation; they are not automatically errors.
+Year 2009-2010: negative quantity rows,12326,Rows with Quantity below zero. Inspect cancellation/return patterns.
+Year 2009-2010: zero or negative price rows,3690,Rows with Price less than or equal to zero.
+Year 2009-2010: missing customer IDs,107927,Rows without Customer ID.
+Year 2009-2010: cancellation invoice rows,10206,Invoice values beginning with C; investigate before revenue calculation.
+Year 2010-2011: negative quantity rows,10624,Rows with Quantity below zero. Inspect cancellation/return patterns.
+Year 2010-2011: zero or negative price rows,2517,Rows with Price less than or equal to zero.
+Year 2010-2011: missing customer IDs,135080,Rows without Customer ID.
+Year 2010-2011: cancellation invoice rows,9288,Invoice values beginning with C; investigate before revenue calculation.
